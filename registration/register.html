@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+        h2 {
+            font-style: italic;
+            color: rgb(0, 177, 200);
+        }
+        .fname-label {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h2>Register Here</h2>
+    <div>
+        <form method="get">
+            <label for="fname"><span class="fname-label">First Name:</span></label>
+            <input name="fname" id="fname" type="text" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input name="lname" id="lname" type="text" required><br><br>
+
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" required><br><br>
+
+            <label for="pwd">Password:</label>
+            <input name="pwd" id="pwd" type="password" required><br><br>
+
+            <label for="bday">Your Birthday:</label>
+            <input name="bday" id="bday" type="date" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input name="gender" id="gender" type="radio" value="male" name="gender">Male<br>
+            <input name="gender" id="gender" type="radio" value="female" name="gender">Female
+            <br><br>
+
+            <label for="pets">Do you have pets?</label><br>
+            <input id="pets" type="checkbox"  name="cats">Cats 🐱<br>
+            <input id="pets" type="checkbox"  name="dogs">Dogs 🐶<br>
+            <input id="pets" type="checkbox"  name="other_pets">Other
+            <br><br>
+
+            <label for="cars">Car:</label><br>
+            <select name="car">
+                <option value="volvo">Volvo</option>
+                <option value="porche">Porsche</option>
+                <option value="bentley">Bentley</option>
+                <option value="benz">Mercedes Benz</option>
+                <option value="ford">Ford</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="lamborghini">Lamborghini</option>
+            </select><br><br>
+
+            <label for="musicgenres">Favorite Music Genres 🎶:</label><br>
+            <select multiple name="music_genres">
+                <option value="jazz">Jazz</option>
+                <option value="edm">EDM</option>
+                <option value="rock">Rock</option>
+                <option value="latin">Latin</option>
+                <option value="hiphop">Hip Hop</option>
+                <option value="disco">Disco</option>
+                <option value="pop">Pop</option>
+                <option value="kpop">K-Pop</option>
+            </select>
+
+            <br><br>
+            <label for="feedback">Rate your experience with the registration process:</label><br><br>
+            <label for="feedback">0</label>
+            <input name="feedback" id="feedback" type="range" min="0" max="10">
+            <label for="feedback">10</label><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
